@@ -1,18 +1,24 @@
 {
   "name": "scaffold-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "CLI tool to generate a modular Express.js backend with TypeScript and Prisma ORM, featuring best practices and scalable architecture",
+  "main": "bin/index.js",
   "bin": {
     "scaffold-backend": "./bin/index.js"
   },
+  "files": [
+    "bin",
+    "src",
+    "templates"
+  ],
   "type": "module",
   "scripts": {
     "dev": "npx tsx bin/index.ts my-app",
     "build": "tsc",
+    "prepare": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["express", "typescript", "cli", "scaffold", "prisma"],
   "author": "",
   "license": "ISC",
   "dependencies": {

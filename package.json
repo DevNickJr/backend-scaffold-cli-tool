@@ -1,0 +1,31 @@
+{
+  "name": "scaffold-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "scaffold-backend": "./bin/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "npx tsx bin/index.ts my-app",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^13.1.0",
+    "fs-extra": "^11.3.0",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/commander": "^2.12.5",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.14.1",
+    "tsx": "^4.19.3"
+  }
+}
